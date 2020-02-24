@@ -1,12 +1,12 @@
 ---
 layout: home
-title: segunolalive
-postsHeading: Latest posts
+title: 'Hi, I am Segun Ola.'
+metaTitle: segunolalive
+metaDesc: Segun Ola's corner of the web.
+postsHeading: Latest Articles
 archiveButtonText: See all posts
 socialImage: /images/visa-shots-4.jpg
 ---
-my little corner of the web
+I'm a software developer and an advocate for accessible user experiences. I am currently based in Lagos, Nigeria. I am also a co-lead at [frontend weekly](http://frontendweekly.dev/).
 
-
-
-**About Me**: Medical Doctor, Software Engineer and a11y nuisance.
+Welcome to my corner of the web.
