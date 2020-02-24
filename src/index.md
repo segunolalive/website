@@ -1,10 +1,12 @@
 ---
 layout: home
-title: A simple starter kit for Eleventy
-postsHeading: Latest posts
+title: 'Hi, I am Segun Ola.'
+metaTitle: segunolalive
+metaDesc: Segun Ola's corner of the web.
+postsHeading: Latest Articles
 archiveButtonText: See all posts
-socialImage: ''
+socialImage: /images/visa-shots-4.jpg
 ---
-Hylia is a lightweight [Eleventy](https://11ty.io) starter kit with [Netlify CMS](https://www.netlifycms.org/) pre-configured, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend yourself.
+I'm a software developer and an advocate for accessible user experiences. I am currently based in Lagos, Nigeria. I am also a co-lead at [frontend weekly](http://frontendweekly.dev/), where my colleagues and I discuss topic relating to front-end development and general software engineering.
 
-Get started now by [deploying Hylia to Netlify.](https://app.netlify.com/start/deploy?repository=https://github.com/hankchizljaw/hylia&stack=cms)
+Welcome to my corner of the web.
