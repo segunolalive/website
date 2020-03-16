@@ -7,7 +7,7 @@ date: 2019-06-17T17:19:24.786Z
 tags:
   - musings
 ---
-![insert something clever](images/0-jfrsnrquqwpg6kjc.jpeg "Credits: by Olivia Bauso on Unsplash")
+![insert something clever](/images/0-jfrsnrquqwpg6kjc.jpeg "Credits: by Olivia Bauso on Unsplash")
 
 ## The Euphoria of Smartness
 
