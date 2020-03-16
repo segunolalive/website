@@ -3,11 +3,12 @@ layout: layouts/post.njk
 title: Understanding Method Chaining In Javascript
 metaTitle: Understanding Method Chaining In Javascript
 metaDesc: ' When programming, it is commonplace to have actions that need to run in a defined series of steps. In this article, Segun explains how to write code that is chainable and easier to read.'
+socialImage: images/0-wx-3njkwp88hrlkx.jpeg
 date: 2018-12-06T10:43:19.236Z
 tags:
   - js
 ---
-![Chain by Kaley Dykstra on Unsplash](images/0-wx-3njkwp88hrlkx.jpeg)
+![Chain by Kaley Dykstra from Unsplash](images/0-wx-3njkwp88hrlkx.jpeg)
 
 When programming, it is commonplace to have actions that need to run in a defined series of steps. Writing a single function that defines all these actions is usually a terrible idea, so we write a number of functions/methods that deal with individual actions. To cater for this, we pass the results of the previous method as arguments to the next method. Then, we end up with something like this:
 
@@ -31,8 +32,6 @@ The sample code above doesn’t seem that bad or unreadable at first. It’s jus
 >
 > then **myObject.yetAnotherMethod**
 
-
-
 but the flow of data is actually in the reverse direction (down-up).
 
 > First **myObject.someMethod** 
@@ -40,8 +39,6 @@ but the flow of data is actually in the reverse direction (down-up).
 > then **myObject.yetAnotherMethod**
 >
 > then **myObject.someOtherMethod**        
-
-
 
 Worst of all, we actually have to intentionally craft the code in the reverse order — write the last function first, then pass it the function whose return value it depends on and so on till we get to the first function in the chain. Now, what happens to the code’s readability when our pipeline of functions gets even longer? For example, when we have ten functions, our code would take on a triangular shape like our best friend from wayback, the [callback hell](http://callbackhell.com/).
 
