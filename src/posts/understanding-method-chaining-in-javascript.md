@@ -8,7 +8,7 @@ date: 2018-12-06T10:43:19.236Z
 tags:
   - js
 ---
-![](/images/0-wx-3njkwp88hrlkx.jpeg "Chain by Kaley Dykstra from Unsplash")
+![Chain by Kaley Dykstra from Unsplash](/images/0-wx-3njkwp88hrlkx.jpeg)
 
 When programming, it is commonplace to have actions that need to run in a defined series of steps. Writing a single function that defines all these actions is usually a terrible idea, so we write a number of functions/methods that deal with individual actions. To cater for this, we pass the results of the previous method as arguments to the next method. Then, we end up with something like this:
 
