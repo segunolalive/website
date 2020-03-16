@@ -54,7 +54,7 @@ Isn’t this clean and readable? If we chained ten functions together, it’ll s
 
 In Javascript, this refers to the current object instance. Unlike most mainstream programming languages, Javascript’s this depends on how and where a method/function is called. If that last statement went over your head, just ignore it. You are not alone. this is a common cause of misunderstanding in Javascript.
 
-<iframe src="https://medium.com/media/d5c4f0bbdc220ce238fb768733b2cc7a" frameborder=0></iframe>
+<blockquote class="twitter-tweet" data-theme="light"><p lang="en" dir="ltr">Sometimes when I&#39;m writing Javascript I want to throw up my hands and say &quot;this is bullshit!&quot; but I can never remember what &quot;this&quot; refers to</p>&mdash; Ben Halpern 🦁 (@bendhalpern) <a href="https://twitter.com/bendhalpern/status/578925947245633536?ref_src=twsrc%5Etfw">March 20, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 We won’t be going into the intricacies of Javascript's this in this article. There are tons of amazing resources that explain how this works in detail. A good place to start is the Mozilla Developers Network ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)). I just thought to introduce it because it holds the key to chaining methods. However, for the sake of this article, when we create an object using an expression such as `object = new SomeClassWeCreated()`, and call the methods defined on that object, this refers to that object. There’s more to this than this. All pun intended.
 
