@@ -8,7 +8,7 @@ date: 2018-12-06T10:43:19.236Z
 tags:
   - js
 ---
-![Chain by Kaley Dykstra from Unsplash](/images/0-wx-3njkwp88hrlkx.jpeg)
+![](/images/0-wx-3njkwp88hrlkx.jpeg "Chain by Kaley Dykstra from Unsplash")
 
 When programming, it is commonplace to have actions that need to run in a defined series of steps. Writing a single function that defines all these actions is usually a terrible idea, so we write a number of functions/methods that deal with individual actions. To cater for this, we pass the results of the previous method as arguments to the next method. Then, we end up with something like this:
 
@@ -45,8 +45,6 @@ Worst of all, we actually have to intentionally craft the code in the reverse or
 ![Callback Hell from \[http://blog.mclain.ca/\](http://blog.mclain.ca/)](https://cdn-images-1.medium.com/max/3544/1*s-OlfkC2Y1zg9m8S4rUlWQ.png)*Callback Hell from <http://blog.mclain.ca/>*
 
 However, if you’ve ever used a library like jQuery, you must have written or seen code like this:
-
-
 
 ```javascript
 $('someCSSSelector')
@@ -108,8 +106,6 @@ To get the result of our chain of function calls, we need to store the results o
 
 Instance properties are properties unique to each object instance, meaning if we create two objects(instances) from the same class by writing new SomeClassWeWrote(), their values can be manipulated independently. Since this refers to the current object instance, attaching the property to this e.g `this.property = ‘someValue'` guarantees it’ll be available to the current instance and not shared with other instances of the same class.
 
-
-
 ```javascript
 class Arithmetic {
   constructor() {
@@ -153,8 +149,6 @@ This example shares lots of similarities with the ChainAble class shown before. 
 
 Because I like the idea, I have decided to slip in something extra. Instead of accessing our value directly, we could define a getter that lets us *get* our value. This is done by defining a dedicated function prefixed with get between lines **3 and 5** which has the responsibility of returning the final result. Then we access it like a regular property on line **15**.
 
-
-
 ```javascript
 class Arithmetic {
   // add getter for value
@@ -174,8 +168,6 @@ a.sum(1, 3, 6)   // => { value: 10 }
 ```
 
 On that note, we have successfully created a class with chainable methods as well as a dedicated *public* API for accessing the result of our computations. This is the final code for our *Arithmetic* class:
-
-
 
 ```javascript
 class Arithmetic {
