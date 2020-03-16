@@ -12,7 +12,7 @@ tags:
   - UI/UX
   - musings
 ---
-![man staring at his watch](/images/0-gupaqcsbl76nty-m.jpeg "Credits: [rawpixel](https://unsplash.com/@rawpixel/collections)")
+![man staring at his watch](/images/0-gupaqcsbl76nty-m.jpeg "Credits: rawpixel on https://unsplash.com/@rawpixel/collections")
 
 
 
