@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: The Principle of Least Power
 metaTitle: The Principle of Least Power
 socialImage: images/joanna-kosinska-laasol0lrys-unsplash.jpg
-date: 2018-03-13T08:36:52.801Z
+date: 2018-06-12T08:36:52.801Z
 tags:
   - css
   - html
