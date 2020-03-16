@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: Stop Being Clever
 metaTitle: Stop Being Clever
 metaDesc: A tongue-in-cheek take on premature optimisations.
-date: 2020-03-16T17:19:24.786Z
+date: 2019-06-17T17:19:24.786Z
 tags:
   - musings
 ---
