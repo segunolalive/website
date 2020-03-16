@@ -46,7 +46,15 @@ Worst of all, we actually have to intentionally craft the code in the reverse or
 
 However, if you’ve ever used a library like jQuery, you must have written or seen code like this:
 
-![](https://cdn-images-1.medium.com/max/2616/1*G2oxKcQMtEjoO-WzoCXnnw.png)
+
+
+```javascript
+$('someCSSSelector')
+  .someMethod()
+  .someOtherMethod()
+  .andSomeOtherMethod()
+  .andYetSomeOtherMethod()
+```
 
 Isn’t this clean and readable? If we chained ten functions together, it’ll still read nicely, top-down. No train of trailing parentheses and semi-colons — God help you if you mistakingly leave one of them out or add an extra one in the wrong place. Best of all, this code reads in the same direction as the data flow. Won't it be nice if our code read the same? So, how do we go from our initial abomination of unreadable junk of nested functions to the clean and beautiful chain of easily readable and understandable code shown above?
 
@@ -62,7 +70,35 @@ As mentioned earlier, this is the current object instance, therefore, it has acc
 
 Next step is to find a way to make sure that we can call another method on the return value of the this.someMethod(), so we can have this.someMethod().someOtherMethod(). To achieve this, we simply tell our methods to return this. That way, each method returns the object that contains the methods we want.
 
-<iframe src="https://medium.com/media/ec7ff1d5f4610dd1afbac5092dce0e02" frameborder=0></iframe>
+```javascript
+class ChainAble {
+  firstMethod() {
+    console.log('This is the First Method');
+    return this;
+  }
+  
+  secondMethod() {
+    console.log('This is the Second Method');
+    return this;
+  }
+  
+  thirdMethod() {
+    console.log('This is the Third Method');
+    return this;
+  }
+}
+
+const chainableInstance = new Chainable()
+chainableInstance
+  .firstMethod()
+  .secondMethod()
+  .thirdMethod();
+
+// Console Output
+// This is the First Method
+// This is the Second Method
+// This is the Third Method
+```
 
 Okay, that’s all nice and good. Now we can chain our methods and produce some side-effects — logging to the console in this case. Our code is a lot more readable and clean, but how do we get actual values from our chainable class?
 
@@ -70,9 +106,44 @@ Okay, that’s all nice and good. Now we can chain our methods and produce some 
 
 To get the result of our chain of function calls, we need to store the results of each function call and then access that data at the end of our chain. For this, we’ll add an instance property to our class to hold the result of each function/method call.
 
-Instance properties are properties unique to each object instance, meaning if we create two objects(instances) from the same class by writing new SomeClassWeWrote(), their values can be manipulated independently. Since this refers to the current object instance, attaching the property to this e.g this.property = ‘someValue' guarantees it’ll be available to the current instance and not shared with other instances of the same class.
+Instance properties are properties unique to each object instance, meaning if we create two objects(instances) from the same class by writing new SomeClassWeWrote(), their values can be manipulated independently. Since this refers to the current object instance, attaching the property to this e.g `this.property = ‘someValue'` guarantees it’ll be available to the current instance and not shared with other instances of the same class.
 
-<iframe src="https://medium.com/media/3aecadaea5570dc58193c105e360cd67" frameborder=0></iframe>
+
+
+```javascript
+class Arithmetic {
+  constructor() {
+    this.value = 0;
+  }
+  sum(...args) {
+    this.value = args.reduce((sum, current) => sum + current, 0);
+    return this;
+  }
+  add(value) {
+    this.value = this.value + value;
+    return this;
+  }
+  subtract(value) {
+    this.value = this.value - value;
+    return this;
+  }
+  average(...args) {
+    this.value = args.length
+      ? (this.sum(...args).value) / args.length
+      : undefined;
+    return this;
+  }
+}
+
+a = new Arithmetic()
+a.sum(1, 3, 6)   // => { value: 10 } 
+  .subtract(3)   // => { value: 7 }
+  .add(4)        // => { value: 11 }
+  .value         // => 11 
+
+// Console Output
+// 11
+```
 
 Let’s run through the code.
 
@@ -82,10 +153,64 @@ This example shares lots of similarities with the ChainAble class shown before. 
 
 Because I like the idea, I have decided to slip in something extra. Instead of accessing our value directly, we could define a getter that lets us *get* our value. This is done by defining a dedicated function prefixed with get between lines **3 and 5** which has the responsibility of returning the final result. Then we access it like a regular property on line **15**.
 
-<iframe src="https://medium.com/media/c49c4a41bc19102c5c5438fd85b4ff28" frameborder=0></iframe>
+
+
+```javascript
+class Arithmetic {
+  // add getter for value
+  get val() {
+    return this.value;
+  }
+  
+  // rest of the code truncated for clarity
+}
+
+
+a = new Arithmetic()
+a.sum(1, 3, 6)   // => { value: 10 } 
+  .subtract(3)   // => { value: 7 }
+  .add(4)        // => { value: 11 }
+  .val           // <== read the result of the computation 
+```
 
 On that note, we have successfully created a class with chainable methods as well as a dedicated *public* API for accessing the result of our computations. This is the final code for our *Arithmetic* class:
 
-<iframe src="https://medium.com/media/f11d50496081c3e958bb299923bb1a5f" frameborder=0></iframe>
 
-*If you liked this article or learned something from it, do give a round of applause and help share with your network. Thank you.*
+
+```javascript
+class Arithmetic {
+  constructor() {
+    this.value = 0;
+  }
+  get val() {
+    return this.value;
+  }
+  sum(...args) {
+    this.value = args.reduce((sum, current) => sum + current, 0);
+    return this;
+  }
+  add(value) {
+    this.value += value;
+    return this;
+  }
+  subtract(value) {
+    this.value -= value;
+    return this;
+  }
+  average(...args) {
+    this.value = args.length
+      ? (this.sum(...args).value) / args.length
+      : undefined;
+    return this;
+  }
+}
+
+a = new Arithmetic()
+a.sum(1, 3, 6)   // => { value: 10 } 
+  .subtract(3)   // => { value: 7 }
+  .add(4)        // => { value: 11 }
+  .val           // => 11 
+
+// Console Output
+// 11
+```
