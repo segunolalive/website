@@ -24,7 +24,7 @@ Sometime ago, I needed to display a piece of text on a web page as a superscript
   (<a href='https://codepen.io/segunolalive'>@segunolalive</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-That definitely works and is a smart way of taking advantage of span tags being inline. However, it’s unnecessary work and *smartness*. Html already provides **<sup>** tag for such. There’s also a similar**<sub>** tag for subscripts. It’s semantic. Anyone or anything reading your code knows exactly what you mean unlike the ad-hoc CSS approach.
+That definitely works and is a smart way of taking advantage of span tags being inline. However, it’s unnecessary work and *smartness*. Html already provides `<sup>` tag for such. There’s also a similar `<sub>` tag for subscripts. It’s semantic. Anyone or anything reading your code knows exactly what you mean unlike the ad-hoc CSS approach.
 
 ### Scenario 2
 
