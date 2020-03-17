@@ -101,6 +101,6 @@ Having an in-depth knowledge of your tools cannot be overstated. You might start
 
 Start small. Bring out the big guns only when necessary. Also, don’t be too quick to rush into using only what you’re familiar with.
 
-> # If all you have is a hammer, everything begins to look like nails — Law of the Instrument (paraphrased)
+> If all you have is a hammer, everything begins to look like nails — Law of the Instrument (paraphrased)
 
 *Special appreciation to [Chuks El-Gran Opia](https://twitter.com/developia_), [Temitope Joloko](https://twitter.com/temmy_jade),[ Enodi Audu](https://twitter.com/a_enodi), [Ebuka Umeh](https://twitter.com/obitojs), [Bolaji](https://twitter.com/Bolaji___), [amarachi akuwudike](https://twitter.com/aimeedykii), for helping with this article.*
