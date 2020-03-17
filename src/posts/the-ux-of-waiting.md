@@ -26,7 +26,7 @@ This is not an article about optimizing your page size to load faster or another
 
 > # Make the wait less painful
 
-![Photo by \[Colter Olmstead\](https://unsplash.com/@colterolmstead?utm_source=medium&utm_medium=referral) on \[Unsplash\](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10368/0*3WSDpL6wJDFUK9K5)*Photo by [Colter Olmstead](https://unsplash.com/@colterolmstead?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![Close-up shot of a snail climbing a tree back](https://cdn-images-1.medium.com/max/10368/0*3WSDpL6wJDFUK9K5) *Photo by [Colter Olmstead](https://unsplash.com/@colterolmstead?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
 
 Slow, boring or monotonous loaders/spinners make the wait seem longer. It could get so bad that it begins to feel longer than if it was a blank screen because they literally tell you “*It’s loading sooooooooooooo slowly”.* Okay, make it faster and life is good. Well, not so fast. Literally, not so fast.
 
