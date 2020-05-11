@@ -31,7 +31,7 @@ The  inner `sections elements`, in this case, exist simply for styling. They're 
 
 The DIV and SPAN elements got a bad wrap for good reason – they were abused. Now, we're abusing and misusing semantic elements. If a piece of text needs to be contextually emphasized, it's tempting to wrap it in a `SPAN` and emphasize purely in CSS. However, we have the `em` and `strong` elements for that. Style appropriately after structurally communicating intent. Don't divide your page into regions using DIVs. You have landmarks e.g header, footer, main, nav for that
 
-## When to use DIV/SPAN?
+## When to use a DIV or SPAN
 
 Use these elements when you intend to communicate nothing e.g you need a wrapper for styling but it doesn't affect the meaning of the content. Use the `DIV` when you need a block-level wrapper and the `SPAN` for inline wrapping.
 
