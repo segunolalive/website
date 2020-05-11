@@ -33,4 +33,8 @@ The DIV and SPAN elements got a bad wrap for good reason – they were abused. N
 
 ## When to use DIV/SPAN?
 
-When you intend to communicate nothing e.g you need a wrapper for styling but it doesn't affect the meaning of the content. Don't use them for anything CLICKABLE. That's already meaningful. Yes, I'm looking at you wrapping an icon in a `SPAN` and adding a click handler – yes, you.
+Use these elements when you intend to communicate nothing e.g you need a wrapper for styling but it doesn't affect the meaning of the content. Don't use them for anything CLICKABLE. That's already meaningful. Yes, I'm looking at you wrapping an icon in a `SPAN` and adding a click handler – yes, you. That's a button.
+
+> Remember, communicate meaning via HTML.
+
+Happy hacking 😉
