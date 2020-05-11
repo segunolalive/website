@@ -6,6 +6,7 @@ tags:
   - accessibility
   - a11y
   - html
+  - best practices
 ---
 There are nearly 150 HTML elements. Only 2 have no semantic meaning. Guess which ones? The DIV and SPAN elements. They are the only HTML elements that convey absolutely no meaning. Surprising, they're the most used elements. Are developers trying to not communicate any meaning?
 
