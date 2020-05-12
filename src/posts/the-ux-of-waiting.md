@@ -6,7 +6,7 @@ metaDesc: >-
   Waiting is a fundamental part of the web experience. While we should strive to
   reduce latency and overall performance of our applications, waiting should be
   treated as a first-class experience not an afterthought.
-socialImage: images/0-gupaqcsbl76nty-m.jpeg
+socialImage: /images/0-gupaqcsbl76nty-m.jpeg
 date: 2018-11-21T17:37:49.896Z
 tags:
   - UI/UX

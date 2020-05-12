@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: Understanding Method Chaining In Javascript
 metaTitle: Understanding Method Chaining In Javascript
 metaDesc: ' When programming, it is commonplace to have actions that need to run in a defined series of steps. In this article, Segun explains how to write code that is chainable and easier to read.'
-socialImage: images/0-wx-3njkwp88hrlkx.jpeg
+socialImage: /images/0-wx-3njkwp88hrlkx.jpeg
 date: 2018-12-06T10:43:19.236Z
 tags:
   - js

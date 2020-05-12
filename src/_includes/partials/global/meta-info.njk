@@ -29,9 +29,8 @@
   <meta property="og:description" content="{{ metaDesc }}" />
 {% endif %}
 
-{% if not socialImage %}
-  {% set socialImage = 'images/visa-shots-4.jpg' %} 
-{% endif %}
+{% set socialImage = socialImage or '/images/visa-shots-4.jpg' %} 
+
   <meta property="og:image" content="{{ socialImage }}" />
   <meta name="twitter:image" content="{{ socialImage }}" />
   <meta property="og:image:alt" content="Page image for {{ site.name }}" />

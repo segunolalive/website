@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: RESTful API Design — PUT vs PATCH
 metaTitle: RESTful API Design — PUT vs PATCH
 metaDesc: ' When designing API endpoints, there’s always the need to specify what http method to use for CRUD (Create, Read/Retrieve, Update, Delete) operations. In this article, Segun explains the nuances of HTTP PUT and PATCH methods.'
-socialImage: images/1-k3ztvzacfgysrw_0z_wgmg.jpeg
+socialImage: /images/1-k3ztvzacfgysrw_0z_wgmg.jpeg
 date: 2018-03-13T09:59:34.840Z
 tags:
   - http
