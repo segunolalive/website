@@ -1,6 +1,9 @@
 ---
 layout: layouts/post.njk
 title: Improving Accessibility With DIV and SPAN
+metaDesc: There are nearly 150 HTML elements. Only 2 have no semantic meaning.
+  Guess which ones? The DIV and SPAN elements. While they are no semantic
+  meaning, using them appropriately can make your websites more accessible
 date: 2020-05-11T16:12:39.249Z
 tags:
   - accessibility
@@ -14,8 +17,8 @@ In an attempt to improve accessibility, many developers demonise the div and spa
 
 Sometimes, however, what you need is an element that has no meaning. An element that says nothing. That's where you use the DIV or the SPAN. When does one need these, you ask? Every time you add an element just so you can achieve some layout or styling. That's their purpose and using them like this can actually improve your site's accessibility. Yes, I said it. Using a DIV or SPAN can improve accessibility. 
 
-```
-<section>
+```html
+<section aria-label="section label">
     <h3>Section Title</h3>
     <section class="fancy-css-class">
       <section class="some-css-class">
