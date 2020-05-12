@@ -1,6 +1,9 @@
 ---
 layout: layouts/post.njk
 title: Improving Accessibility With DIV and SPAN
+metaDesc: There are nearly 150 HTML elements. Only 2 have no semantic meaning.
+  Guess which ones? The DIV and SPAN elements. While they are no semantic
+  meaning, using them appropriately can make your websites more accessible
 date: 2020-05-11T16:12:39.249Z
 tags:
   - accessibility
