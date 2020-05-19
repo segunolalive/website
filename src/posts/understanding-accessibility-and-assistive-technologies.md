@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Understanding Accessibility And Assistive Technologies
-date: 2020-05-11T16:12:39.249Z
+date: 2020-05-19T06:53:19.657Z
 tags:
   - accessibility
   - a11y
@@ -18,4 +18,8 @@ On the web, we also native accessibility primitives e.g the following creates a 
 
 It behaves like a similarly labelled native checkbox. It has similar mouse and keyboard interactions by default. A screen reader recognises it as identical to a native checkbox? A switch knows how to interact with it by default. What makes this possible?
 
+
+
 ## The Accessibility APIs
+
+The accessibility frameworks and APIs mentioned earlier make all these possible. When we visit a webpage, the browser sends the accessibility information to the operating system's accessibility framework using the aforementioned APIs. If we use assistive technologies like a screen reader, they query that information from the underlying framework and can tell us about each element, their current state, if applicable, and how to interact with them. This is why semantic HTML is king. Compare the code block above, to the dotnet core checkbox class linked above.
