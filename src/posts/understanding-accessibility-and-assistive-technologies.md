@@ -1,7 +1,8 @@
 ---
 layout: layouts/post.njk
 title: Accessibility, Web Accessibility And Assistive Technologies
-metaDesc: Learn how accessibility works under the hood.
+metaDesc: Learn how web accessibility works under the hood, how you can apply it
+  and avoid pitfalls when building software.
 date: 2020-05-19T06:53:19.657Z
 tags:
   - accessibility
