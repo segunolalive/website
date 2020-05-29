@@ -16,6 +16,7 @@
 
 <meta property="og:site_name" content="{{ siteTitle }}" />
 <meta property="og:title" content="{{ pageTitle }}" />
+<meta name="twitter:title" content="{{ pageTitle }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ currentUrl }}" />
 
@@ -29,6 +30,13 @@
   <meta property="og:description" content="{{ metaDesc }}" />
 {% endif %}
 
+{% if socialImage %}
+  <meta name="twitter:card" content="summary_large_image">
+{% else %}
+  <meta name="twitter:card" content="summary">
+{% endif %}
+
+{% set fallbackImage = '/images/visa-shots-4.jpg' %}
 {% set socialImage = socialImage or '/images/visa-shots-4.jpg' %} 
 
   <meta property="og:image" content="{{ socialImage }}" />
