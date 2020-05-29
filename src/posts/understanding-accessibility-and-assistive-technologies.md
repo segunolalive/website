@@ -1,15 +1,14 @@
 ---
 layout: layouts/post.njk
 title: How Web Accessibility Works
-metaDesc: Learn how web accessibility works under the hood, how you can apply it
-  and avoid pitfalls when building software.
+metaDesc: A quick introduction to the inner workings of web accessibility.
 date: 2020-05-19T06:53:19.657Z
 tags:
   - accessibility
   - a11y
   - musings
 ---
-When we write HTML, those tags don't run in the browser. The browser creates a tree representation of the HTML document given to it. This tree is called the DOM *(Document Object Model)*. This is what the browser translates to elements on the screen. HTML is just a declarative DSL *(Domain Specific Language)* for expressing the DOM. If you are familiar with React, it's like `JSX` being compiled to `React.createElement`. Similarly, our CSS rules are merged with the user agent's default styles to generate the CSSOM _(CSS Object Model)_. 
+When we write HTML, those tags don't run in the browser. The browser creates a tree representation of the HTML document given to it. This tree is called the DOM *(Document Object Model)*. This is what the browser translates to elements on the screen. HTML is just a declarative DSL *(Domain Specific Language)* for expressing the DOM. If you are familiar with React, it's like `JSX` being compiled to React Elements. Similarly, our CSS rules are merged with the user agent's default styles to generate the CSSOM _(CSS Object Model)_. 
 
 Every mainstream operating system has built-in accessibility frameworks and APIs. On MacOs, we have the [NSAccessibility Protocol](https://developer.apple.com/documentation/appkit/nsaccessibilityprotocol). On Windows, we have [UI Automation](https://docs.microsoft.com/en-us/windows/win32/winauto/entry-uiauto-win32). These frameworks specify the behaviours of common UI widgets and patterns. The native development frameworks for these operating systems provide primitives that interface with these Accessibility APIs ensuring that application UIs are accessible by default. For example, here is the [checkbox class](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.checkbox?view=netcore-3.1) for `System.Windows.Forms` in dotnet core, which defines the behaviour and appearance of a native checkbox on the Windows Operating System.
 
