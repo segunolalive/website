@@ -44,3 +44,6 @@ We can compose multiple HTML elements into more complex UI widgets and tie them 
 ## Custom UI Widgets
 
 When designing or building custom UI widgets, it's important that we consider the accessibility implications of the design. It can be tempting to roll out your own solution in code but before doing so ask: "can this design be adequately represented by established UI patterns and widgets? Does that UI pattern exist in the wild?" If the answers are "yes", then there's probably a set of implementation guidelines for it already. You should follow them. These guidelines include the expected interactions, roles, and associations. Following these patterns means your users don't have to learn how to use your app, it'll work just like any other application on their operating system. Also, you wont have to provide instructions for all the different assistive technologies your users could be using.
+
+## Summary
+There are standardised ways of representing UI elements such that they work well for all users. These standards are mostly uniformly implemented across platforms and operating systems and exposed as platform Accessibility APIs. Assistive technologies depend on these APIs to accurately represent the UI to users as well as help them interact with it. Browsers also provide an Accessibility Object Model that assistive technologies can query.
