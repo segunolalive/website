@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: How Web Accessibility Works
 metaDesc: A quick introduction to the inner workings of web accessibility.
 socialImage: /images/a11y.png
-date: 2020-06-04T05:52:48.210Z
+date: 2020-06-04T06:13:45.766Z
 tags:
   - accessibility
   - a11y
