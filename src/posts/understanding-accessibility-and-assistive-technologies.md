@@ -45,7 +45,7 @@ When designing or building custom UI widgets, it's important that we consider th
 > Can this design be adequately represented by established UI patterns and widgets? Does that UI pattern exist in the wild?
 If the answers are "yes", then there's probably a set of implementation guidelines for it already. You should follow them.
 
-These guidelines include the expected interactions, roles, and associations. Following these patterns means your users don't have to learn how to use your app, it'll work just like any other application on their operating system. Also, you wont have to provide instructions for all the different assistive technologies your users could be using.
+These guidelines include the expected interactions, roles, and associations. Following these patterns means your users don't have to learn how to use your app, it'll work just like any other application on their operating system. Also, you wont have to provide instructions for all the different assistive technologies your users could be using. A good place to get started is the [W3 WAI ARIA PRACTICES](https://www.w3.org/TR/wai-aria-practices/)
 
 ## Summary
 
