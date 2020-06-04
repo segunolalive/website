@@ -50,4 +50,5 @@ If the answers are "yes", then there's probably a set of implementation guidelin
 
 There are standardised ways of representing UI elements such that they work well for all users. These standards are mostly uniformly implemented across platforms and operating systems and exposed as platform Accessibility APIs. Assistive technologies depend on these APIs to accurately represent the UI to users as well as help them interact with it. Browsers also provide an Accessibility Object Model that assistive technologies can query.
 
-*Post Script*: There is ongoing work to allow web developers query the AOM in future, although there are concerns about privacy and possible discriminatory usage of such information.
+## *Post Script*: 
+There is ongoing work to allow web developers query the AOM in future, although there are concerns about privacy and possible discriminatory usage of such information.
