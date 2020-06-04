@@ -21,8 +21,12 @@ Depending on the screen reader, it might announce the keyboard combinations or g
 Also note that the screen reader announced that we're in a list. Most screen reader users already know how to navigate common UI patterns like list. They even have specialised keyboard shortcuts for quick navigation.
 
 ## Why Hints Can Be Bad
-Adding keyboard hints for screen reader users tends to add noise to the user experience.
+Adding keyboard hints for screen reader users tends to add noise to the user experience. Imagine users who are already familiar with navigating web content using their screen reader shortcuts having to listen through extra information that actually adds nothing to them. 
 
+Also, they're several screen readers and they all have custom controls. Would you add instructors for every one? Some users are on mobile and touch screens, would you also include information for gestures? In the end, you'd only succeed at giving a terrible experience to all users.
+
+## When To Use Hints
+Hints aren't all bad and sometimes can be necessary but before going down that route, be sure it's the right decision.
 
 
 
