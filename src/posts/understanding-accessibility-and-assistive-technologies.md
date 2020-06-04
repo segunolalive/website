@@ -34,15 +34,16 @@ It behaves like a similarly labelled native checkbox. It has similar mouse and k
 
 ## Semantic HTML and  Accessible Rich Internet Applications (ARIA)
 
-Building websites using semantic HTML is the web equivalent of building a desktop or mobile app using the platform's primitive. These primitives provide a lot of information and behaviour out of the box. This information is relayed to the AOM and the platform's accessibility framework. For example, representing a clickable UI element with an HTML button says, its clickable/tappable, focusable, its function is a button, that is, clicking it does something. An assistive technology like a switch or screen reader can then query this information and relay it to a user. Of course the static nature of HTML puts some limits to its effectiveness in representing all the possible accessibility information, this is why we have ARIA attributes. With the use of ARIA and some scripting, we can make  up for the deficiencies of HTML when building highly interactive and complex UI widgets.
+Building websites using semantic HTML is the web equivalent of building a desktop or mobile app using the platform's primitive. These primitives provide a lot of information and behaviour out of the box. This information is relayed to the AOM and the platform's accessibility framework. For example, representing a clickable UI element with an HTML button says, its clickable/tappable, focusable, its function is a button, that is, clicking it does something. An assistive technology like a switch or screen reader can then query this information and relay it to a user. Of course the static nature of HTML puts some limits to its effectiveness in representing all the possible accessibility information, this is why we have ARIA attributes.
 
 We can compose multiple HTML elements into more complex UI widgets and tie them up with scripting. For example, with some scripting, an input field can be composed with an unordered list of items to make an autocomplete widget. While this is possible, we still still need a way to tell the AOM that these elements are indeed one composite widget not just an input field and a list. This is where ARIA-roles can help. Setting a role of **combobox** on the container of the input element and **listbox** on the unordered represents the widget as a combobox and a screen reader will announce it as such. We still need some other ARIA directives such as aria-controls, aria-live etc, but those details are beyond the scope of this article.
 
 ## Custom UI Widgets
 
-When designing or building custom UI widgets, it's important that we consider the accessibility implications of the design. It can be tempting to roll out your own solution in code but before doing so ask: 
+When designing or building custom UI widgets, it's important that we consider the accessibility implications of the design. It can be tempting to roll out your own solution in code but before doing so, ask: 
 
-> "can this design be adequately represented by established UI patterns and widgets? Does that UI pattern exist in the wild?" If the answers are "yes", then there's probably a set of implementation guidelines for it already. You should follow them.
+> Can this design be adequately represented by established UI patterns and widgets? Does that UI pattern exist in the wild?
+If the answers are "yes", then there's probably a set of implementation guidelines for it already. You should follow them.
 
 These guidelines include the expected interactions, roles, and associations. Following these patterns means your users don't have to learn how to use your app, it'll work just like any other application on their operating system. Also, you wont have to provide instructions for all the different assistive technologies your users could be using.
 
