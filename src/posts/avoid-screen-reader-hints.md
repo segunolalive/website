@@ -4,7 +4,7 @@ title: Avoid Screen Reader Hints
 metaDesc: It can be tempting to provide control hints for screen readers, resist
   the urge. In this article, Segun explains why adding control hints can lead to
   a degraded experience for screen reader users.
-date: 2020-06-08T05:53:10.222Z
+date: 2020-06-08T13:08:33.054Z
 tags:
   - a11y
   - accessibility
