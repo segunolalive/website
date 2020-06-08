@@ -21,7 +21,7 @@ In our case, the tab panels contained many interactive elements and the team was
 
 This tells the user that they're on a the first tab of 5 in a tab list and that the current tab is the selected tab. Depending on the screen reader, it might announce the keyboard combinations or gestures for selecting the current tab or navigating between the tabs and tab panels. Also, if the element with the role of `"tablist"` has an accessible name, then it might be announced as a tab group e.g _"Account Info Tab group"_. VoiceOver does this.
 
-Also note that the screen reader announced that we're in a list. Most screen reader users already know how to navigate common UI patterns like list. They even have specialised keyboard shortcuts for quick navigation.
+Also note that the screen reader announced that we're in a list. Most screen reader users already know how to navigate common UI patterns like lists. They even have specialised keyboard shortcuts for quick navigation.
 
 ## Why Hints Can Be Bad
 Adding keyboard hints for screen reader users tends to add noise to the user experience. Imagine users who are already familiar with navigating web content using their screen reader shortcuts having to listen through extra information that actually adds nothing to them. 
