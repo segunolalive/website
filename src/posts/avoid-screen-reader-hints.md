@@ -28,6 +28,8 @@ Also, they're several screen readers and they all have custom controls. Would yo
 ## When To Use Hints
 Hints aren't all bad and sometimes can be necessary but before going down that route, be sure it's the right decision.
 
+A good use for hints is when you need to provide extra information on *non-interactive* elements e.g a carousel slide. In t
+
 
 
 
