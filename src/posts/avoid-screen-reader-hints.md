@@ -26,7 +26,7 @@ Also note that the screen reader announced that we're in a list. Most screen rea
 ## Why Hints Can Be Bad
 Adding keyboard hints for screen reader users tends to add noise to the user experience. Imagine users who are already familiar with navigating web content using their screen reader shortcuts having to listen through extra information that actually adds nothing to them. 
 
-Also, there several screen readers and they all have custom controls. Would you add instructors for every one? Some users are on mobile and touch screens, would you also include information for gestures? In the end, you'd only succeed at giving a terrible experience to all users.
+Also, there are several screen readers and they all have custom controls. Would you add instructors for every single one of them? Some users are on mobile and touch screens, would you also include information for gestures? In the end, you'd only succeed at giving a terrible experience to all users.
 
 For further learning, [checkout this article by Adrian Roselli](https://adrianroselli.com/2019/10/stop-giving-control-hints-to-screen-readers.html). Adrian has done the work of making videos of different screen reader/browser combinations to help demonstrate this.
 
