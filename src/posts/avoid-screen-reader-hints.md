@@ -1,12 +1,15 @@
 ---
 layout: layouts/post.njk
 title: Avoid Screen Reader Hints
-date: 2020-06-04T09:41:20.084Z
+metaDesc: It can be tempting to provide control hints for screen readers, resist
+  the urge. In this article, Segun explains why adding control hints can lead to
+  a degraded experience for screen reader users.
+date: 2020-06-08T05:53:10.222Z
 tags:
   - a11y
   - accessibility
 ---
-Recently, a colleague asked to add hints for screen readers on a custom UI widget we had worked on together but I refused. Why?
+Recently, a colleague asked to add control hints for screen readers on a custom UI widget we had worked on together but I refused. Why?
 
 ## Background
 
@@ -16,7 +19,7 @@ In our case, the tab panels contained many interactive elements and the team was
 
 > Recipes. Selected tab, 1 of 5.
 
-Depending on the screen reader, it might announce the keyboard combinations or gestures for selecting the current tab or navigating between the tabs and tab panels. Also, if the element with the role of `"tablist"` has an accessible name, then it might be announces as a tab group e.g _"Account Info Tab group"_. VoiceOver does this.
+This tells the user that they're on a the first tab of 5 in a tab list and that the current tab is the selected tab. Depending on the screen reader, it might announce the keyboard combinations or gestures for selecting the current tab or navigating between the tabs and tab panels. Also, if the element with the role of `"tablist"` has an accessible name, then it might be announces as a tab group e.g _"Account Info Tab group"_. VoiceOver does this.
 
 Also note that the screen reader announced that we're in a list. Most screen reader users already know how to navigate common UI patterns like list. They even have specialised keyboard shortcuts for quick navigation.
 
@@ -25,10 +28,7 @@ Adding keyboard hints for screen reader users tends to add noise to the user exp
 
 Also, they're several screen readers and they all have custom controls. Would you add instructors for every one? Some users are on mobile and touch screens, would you also include information for gestures? In the end, you'd only succeed at giving a terrible experience to all users.
 
-## When To Use Hints
-Hints aren't all bad and sometimes can be necessary but before going down that route, be sure it's the right decision.
-
-A good use for hints is when you need to provide extra information on *non-interactive* elements e.g a carousel slide. In t
+For further learning, [checkout this article by Adrian Roselli](https://adrianroselli.com/2019/10/stop-giving-control-hints-to-screen-readers.html). Adrian has done the work of making videos of different screen reader/browser combinations to help demonstrate this.
 
 
 
