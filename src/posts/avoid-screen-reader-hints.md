@@ -28,6 +28,8 @@ Adding keyboard hints for screen reader users tends to add noise to the user exp
 
 Also, there are several screen readers and they all have custom controls. Would you add instructors for every single one of them? Some users are on mobile and touch screens, would you also include information for gestures? In the end, you'd only succeed at giving a terrible experience to all users.
 
+This is why it's important to use established patterns in your User Interfaces. If you need to provide instructions to screen readers on how to interact with your UI widgets, halt, and rethink. Chances are you are doing something wrong.
+
 For further learning, [checkout this article by Adrian Roselli](https://adrianroselli.com/2019/10/stop-giving-control-hints-to-screen-readers.html). Adrian has done the work of making videos of different screen reader/browser combinations to help demonstrate this.
 
 
