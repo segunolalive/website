@@ -6,6 +6,11 @@
       "external": false
     },
     {
+      "text": "RSS",
+      "url": "https://blog.segunolalive.com/feed.xml",
+      "external": true
+    },
+    {
       "text": "GitHub",
       "url": "https://github.com/segunolalive",
       "external": true
