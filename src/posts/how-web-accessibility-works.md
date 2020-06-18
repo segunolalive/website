@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: How Web Accessibility Works
 metaDesc: A quick introduction to the inner workings of web accessibility.
 socialImage: /images/a11y.png
-date: 2020-06-04T05:52:48.210Z
+date: 2020-06-04T06:13:45.766Z
 tags:
   - accessibility
   - a11y
@@ -36,7 +36,7 @@ It behaves like a similarly labelled native checkbox. It has similar mouse and k
 
 Building websites using semantic HTML is the web equivalent of building a desktop or mobile app using the platform's primitive. These primitives provide a lot of information and behaviour out of the box. This information is relayed to the AOM and the platform's accessibility framework. For example, representing a clickable UI element with an HTML button says, its clickable/tappable, focusable, its function is a button, that is, clicking it does something. An assistive technology like a switch or screen reader can then query this information and relay it to a user. Of course the static nature of HTML puts some limits to its effectiveness in representing all the possible accessibility information, this is why we have ARIA attributes.
 
-We can compose multiple HTML elements into more complex UI widgets and tie them up with scripting. For example, with some scripting, an input field can be composed with an unordered list of items to make an autocomplete widget. While this is possible, we still still need a way to tell the AOM that these elements are indeed one composite widget not just an input field and a list. This is where ARIA-roles can help. Setting a role of **combobox** on the container of the input element and **listbox** on the unordered represents the widget as a combobox and a screen reader will announce it as such. We still need some other ARIA directives such as aria-controls, aria-live etc, but those details are beyond the scope of this article.
+We can compose multiple HTML elements into more complex UI widgets and tie them up with scripting. For example, with some scripting, an input field can be composed with an unordered list of items to make an autocomplete widget. While this is possible, we still still need a way to tell the AOM that these elements are indeed one composite widget not just an input field and a list. This is where ARIA-roles can help. Setting a role of **combobox** on the container of the input element and **listbox** on the unordered list represents the widget as a combobox and a screen reader will announce it as such. We still need some other ARIA directives such as aria-controls, aria-live etc, but those details are beyond the scope of this article.
 
 ## Custom UI Widgets
 
@@ -44,11 +44,10 @@ When designing or building custom UI widgets, it's important that we consider th
 
 > Can this design be adequately represented by established UI patterns and widgets? Does that UI pattern exist in the wild?
 
-If the answers are "yes", then there's probably a set of implementation guidelines for it already. You should follow them. These guidelines include the expected interactions, roles, and associations. Following these patterns means your users don't have to learn how to use your app, it'll work just like any other application on their operating system. Also, you wont have to provide instructions for all the different assistive technologies your users could be using. A good place to get started is the [W3C WAI ARIA PRACTICES](https://www.w3.org/TR/wai-aria-practices/)
+If the answers are "yes", then there's probably a set of implementation guidelines for it already. You should follow them. These guidelines include the expected interactions, roles, and associations. Following these patterns means your users don't have to learn how to use your app, it'll work just like any other application on their operating system. Also, you won't have to provide instructions for all the different assistive technologies your users could be using. A good place to get started is the [W3C WAI ARIA PRACTICES](https://www.w3.org/TR/wai-aria-practices/)
 
 ## Summary
 
 There are standardised ways of representing UI elements such that they work well for all users. These standards are mostly uniformly implemented across platforms and operating systems and exposed as platform Accessibility APIs. Assistive technologies depend on these APIs to accurately represent the UI to users as well as help them interact with it. Browsers also provide an Accessibility Object Model that assistive technologies can query.
 
-## *Post Script*: 
-There is ongoing work to allow web developers query the AOM in future, although there are concerns about privacy and possible discriminatory usage of such information.
+***PS***: There is ongoing work to allow web developers query the AOM in future, although there are concerns about privacy and possible discriminatory usage of such information.
